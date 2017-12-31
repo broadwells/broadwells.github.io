@@ -6548,6 +6548,7 @@ button.close {
 }
 @-ms-viewport {
   width: device-width;
+  height: device-height;
 }
 .visible-xs,
 .visible-sm,
