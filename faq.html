@@ -51,12 +51,15 @@
                       <a class="page-scroll" href="index.html#hotel">Accommodations</a>
                   </li>
                   <li>
+                      <a class="page-scroll" href="in-area.html">In The Area</a>
+                  </li>
+                  <li>
                       <a class="page-scroll" href="index.html#crawl">Bar Crawl</a>
                   </li>
                   <li>
                       <a class="page-scroll" href="index.html#registry">Registry</a>
                   </li>
-                  <li>
+                  <li class="navbar-default active">
                       <a class="page-scroll" href="#page-top">FAQ</a>
                   </li>
               </ul>
@@ -65,7 +68,7 @@
       </div>
       <!-- /.container-fluid -->
   </nav>
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-3x fa-chevron-circle-up "></i></button>
   <header>
       <div class="header-content">
           <div class="header-content-inner">
@@ -126,5 +129,24 @@
           </div>
       </div>
   </section>
+  <!-- JS for Top Page Scroll -->
+  <script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
 </body>
 </html>
